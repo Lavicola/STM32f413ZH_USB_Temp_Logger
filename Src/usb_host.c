@@ -25,7 +25,7 @@
 #include "usbh_core.h"
 #include "usbh_msc.h"
 
-/* USER CODE BEGIN Includes */
+/* ssUSER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
