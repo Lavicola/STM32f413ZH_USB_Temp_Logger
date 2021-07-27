@@ -25,18 +25,30 @@
 #include "usbh_core.h"
 #include "usbh_msc.h"
 
+
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
+
+/* USER CODE BEGIN PV */
+/* Private variables ---------------------------------------------------------*/
+
+/* USER CODE END PV */
+
+/* USER CODE BEGIN PFP */
+/* Private function prototypes -----------------------------------------------*/
+
+/* USER CODE END PFP */
+
+/* USB Host core handle declaration */
+USBH_HandleTypeDef hUsbHostFS;
+ApplicationTypeDef Appli_state = APPLICATION_IDLE;
 
 /*
  * -- Insert your variables declaration here --
  */
 /* USER CODE BEGIN 0 */
-
-
-USBH_HandleTypeDef hUsbHostFS;
-ApplicationTypeDef Appli_state = APPLICATION_IDLE;
 
 
 #include "ff.h"
@@ -45,11 +57,13 @@ FIL MyFile;
 FRESULT res;
 uint32_t bytesWritten;
 uint8_t rtext[200];
-uint8_t wtext[] = "USB Host Library : Mass Storage Example";
-uint8_t name[30]="awesome.txt";//name of the file
 uint16_t counter=0;
 uint32_t i=0;
-uint8_t isMounted = 0;
+const int true =1;
+const int false =0;
+const char path[] = "0://";
+uint8_t isMounted = false;
+uint8_t isChanged = false;
 FILINFO fno;
 
 
@@ -61,27 +75,40 @@ extern UART_HandleTypeDef huart3;
 uint8_t uart_tx_buffer[100];
 
 
-void userFunction(void) {
+
+uint8_t save_to_usb(const MeasureInformation l_MeasureObject) {
 	UINT bytesread;
 	FRESULT l_result = FR_DISK_ERR;
 	
 	
+	
+	char wbytes[40];
+	uint8_t file_name[35];//name of the file
+	
+
+	
+
+	
+	
+	
 	if (Appli_state == APPLICATION_READY) {		
 		// mount it first!
-		if(isMounted == 0)
+		if(isMounted == false)
 		{
-		uint8_t a = f_mount(&USBH_fatfs,"0://",1);
-			isMounted = 1;
+		uint8_t a = f_mount(&USBH_fatfs,path,1);
+			isMounted = true;
+			isChanged = true;
 		}
 		
-		
-		switch(f_stat(name,&fno)){
+		sprintf(file_name,"%d-%d-%d.txt",l_MeasureObject.date[0],l_MeasureObject.date[1],l_MeasureObject.date[2]);
+				
+		switch(f_stat(file_name,&fno)){
 			
 			case FR_NO_FILE:
-				l_result = f_open(&MyFile,name,FA_CREATE_NEW|FA_WRITE);
+				l_result = f_open(&MyFile,file_name,FA_CREATE_NEW|FA_WRITE);
 			break;
 			case FR_OK:
-				l_result = f_open(&MyFile,name,FA_OPEN_APPEND|FA_WRITE);
+				l_result = f_open(&MyFile,file_name,FA_OPEN_APPEND|FA_WRITE);
 			break;
 			// I don´t expect other errors
 			default:
@@ -89,16 +116,31 @@ void userFunction(void) {
 		}
 		
 			if(l_result == FR_OK){
+
 				
-				HAL_UART_Transmit(&huart3, "This is a test", strlen("This is a test"),1000);
-				f_puts("This is a test\n",&MyFile);	
+				sprintf(&wbytes[0],"%d-%d: ",(int)l_MeasureObject.time[0],(int)l_MeasureObject.time[1]);
+				strcat(wbytes,l_MeasureObject.temp_in_string);
+				strcat(wbytes,"  ");
+				strcat(wbytes,l_MeasureObject.rh_in_string);
+				strcat(wbytes,"\n");
+				
+				
+				HAL_UART_Transmit(&huart3, &wbytes[0], 50,1000);
+				f_puts(wbytes,&MyFile);	
 				f_close(&MyFile);
 				
+				return true;
 			}
-		
 
 
-  }
+  }else if(isMounted == true && isChanged == true){
+					// if it was mounted and we changed the value we will dismount it
+					uint8_t a = f_mount(&USBH_fatfs,path,0);
+					isMounted = false;
+	}
+	
+	return false;
+	
 }
 
 /*

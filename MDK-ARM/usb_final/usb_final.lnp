@@ -23,6 +23,10 @@
 "usb_final\stm32f4xx_hal_cortex.o"
 "usb_final\stm32f4xx_hal.o"
 "usb_final\stm32f4xx_hal_exti.o"
+"usb_final\stm32f4xx_hal_i2c.o"
+"usb_final\stm32f4xx_hal_i2c_ex.o"
+"usb_final\stm32f4xx_hal_rtc.o"
+"usb_final\stm32f4xx_hal_rtc_ex.o"
 "usb_final\stm32f4xx_hal_tim.o"
 "usb_final\stm32f4xx_hal_tim_ex.o"
 "usb_final\stm32f4xx_hal_uart.o"
@@ -38,7 +42,14 @@
 "usb_final\usbh_msc.o"
 "usb_final\usbh_msc_bot.o"
 "usb_final\usbh_msc_scsi.o"
---library_type=microlib --strict --scatter "usb_final\usb_final.sct"
+"usb_final\tim_delay.o"
+"usb_final\dht22.o"
+"usb_final\isensor.o"
+"usb_final\floattostring.o"
+"usb_final\i2c_lcd.o"
+"usb_final\ds18b20.o"
+"usb_final\componentsmanager.o"
+--strict --scatter "usb_final\usb_final.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "usb_final.map" -o usb_final\usb_final.axf

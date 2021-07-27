@@ -30,7 +30,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx.h"
 #include "stm32f4xx_hal.h"
+#include "MeasureInformationObject.h"
 
+	 
+	 
 /* USER CODE BEGIN INCLUDE */
 
 /* USER CODE END INCLUDE */
@@ -72,6 +75,8 @@ typedef enum {
 void MX_USB_HOST_Init(void);
 
 void MX_USB_HOST_Process(void);
+
+uint8_t save_to_usb(const MeasureInformation l_MeasureObject);
 
 /**
   * @}

@@ -31,8 +31,14 @@ usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.
 usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
+usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h
 usb_final\usbh_conf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
@@ -43,3 +49,4 @@ usb_final\usbh_conf.o: ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pi
 usb_final\usbh_conf.o: ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h
 usb_final\usbh_conf.o: ../Inc/usbh_platform.h
 usb_final\usbh_conf.o: ../Inc/usb_host.h
+usb_final\usbh_conf.o: ..\Custom\MeasureInformationObject.h

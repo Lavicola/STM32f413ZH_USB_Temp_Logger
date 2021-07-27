@@ -452,10 +452,8 @@ USBH_URBStateTypeDef USBH_LL_GetURBState(USBH_HandleTypeDef *phost, uint8_t pipe
 USBH_StatusTypeDef USBH_LL_DriverVBUS(USBH_HandleTypeDef *phost, uint8_t state)
 {
   if (phost->id == HOST_FS) {
-    //MX_DriverVbusFS(state);
-		HAL_GPIO_WritePin(GPIOG,GPIO_PIN_6,1);
-
-  }
+			//MX_DriverVbusFS(state);
+		  HAL_GPIO_WritePin(USB_PowerSwitchOn_GPIO_Port, USB_PowerSwitchOn_Pin, GPIO_PIN_SET);		  }
 
   /* USER CODE BEGIN 0 */
 

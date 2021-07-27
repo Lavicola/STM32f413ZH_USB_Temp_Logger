@@ -26,8 +26,14 @@ usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
 usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
+usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h
 usb_final\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
@@ -52,3 +58,12 @@ usb_final\main.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
 usb_final\main.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
 usb_final\main.o: ../Inc/usbh_diskio.h
 usb_final\main.o: ../Inc/usb_host.h
+usb_final\main.o: ..\Custom\MeasureInformationObject.h
+usb_final\main.o: ..\Custom\FloatToString.h
+usb_final\main.o: ..\Custom\TIM_Delay.h
+usb_final\main.o: ..\Custom\I2c_lcd.h
+usb_final\main.o: ..\Custom\Ds18b20.h
+usb_final\main.o: ..\Custom\ISensor.h
+usb_final\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+usb_final\main.o: ..\Custom\ComponentsManager.h
+usb_final\main.o: ..\Custom\dht22.h
