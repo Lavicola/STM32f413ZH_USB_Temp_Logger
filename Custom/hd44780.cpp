@@ -1,14 +1,18 @@
 
-/** Put this in the src folder **/
+/** 
+Function(implementation) used from: https://controllerstech.com/i2c-lcd-in-stm32/
 
-#include "I2c_lcd.h"
+
+**/
+
+#include "HD44780.h"
 
 extern I2C_HandleTypeDef hi2c1;  // change your handler here accordingly
 
 #define SLAVE_ADDRESS_LCD 0x4E // change this according to ur setup
 
 
-
+int static cursor_position = 0;	
 
 HD44780::HD44780(){
 	
@@ -34,10 +38,27 @@ HD44780::HD44780(){
 	HD44780::send_cmd (0x06); //Entry mode set --> I/D = 1 (increment cursor) & S = 0 (no shift)
 	HAL_Delay(1);
 	HD44780::send_cmd (0x0C); //Display on/off control --> D = 1, C and B = 0. (Cursor and blink, last two bits)
-
+	
+	cursor_position = 0;
 }
 
 	
+
+
+void HD44780::put_cur(int row, int col){
+	    switch (row)
+    {
+        case 0:
+            col |= 0x80;
+            break;
+        case 1:
+            col |= 0xC0;
+            break;
+    }
+
+    HD44780::send_cmd (col);
+}
+
 
 
 void HD44780::send_cmd (char cmd)
@@ -73,9 +94,17 @@ void HD44780::clear (void)
 	{
 		HD44780::send_data (' ');
 	}
+	
+	cursor_position = 0;
+	HD44780::put_cur(cursor_position,0);
+
+	
 }
 
 void HD44780::send_string (char *str)
 {
 	while (*str) HD44780::send_data (*str++);
+	cursor_position +=1;
+	HD44780::put_cur(cursor_position,0);
+
 }

@@ -41,3 +41,4 @@ usb_final\componentsmanager.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal
 usb_final\componentsmanager.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h
 usb_final\componentsmanager.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
 usb_final\componentsmanager.o: ..\Custom\Ds18b20.h
+usb_final\componentsmanager.o: ..\Custom\hd44780.h

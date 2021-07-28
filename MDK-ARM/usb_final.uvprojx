@@ -738,14 +738,14 @@
               <FilePath>..\Custom\FloatToString.h</FilePath>
             </File>
             <File>
-              <FileName>I2c_lcd.h</FileName>
+              <FileName>hd44780.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Custom\I2c_lcd.h</FilePath>
+              <FilePath>..\Custom\hd44780.h</FilePath>
             </File>
             <File>
-              <FileName>I2c_lcd.cpp</FileName>
+              <FileName>hd44780.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\Custom\I2c_lcd.cpp</FilePath>
+              <FilePath>..\Custom\hd44780.cpp</FilePath>
             </File>
             <File>
               <FileName>MeasureInformationObject.h</FileName>

@@ -46,7 +46,7 @@
 "usb_final\dht22.o"
 "usb_final\isensor.o"
 "usb_final\floattostring.o"
-"usb_final\i2c_lcd.o"
+"usb_final\hd44780.o"
 "usb_final\ds18b20.o"
 "usb_final\componentsmanager.o"
 --strict --scatter "usb_final\usb_final.sct"

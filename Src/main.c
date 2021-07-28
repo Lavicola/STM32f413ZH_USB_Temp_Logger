@@ -28,8 +28,6 @@
 
 #include "FloatToString.h"
 #include "TIM_Delay.h"
-#include "I2c_lcd.h"
-#include "Ds18b20.h"
 #include "ComponentsManager.h"
 
 
@@ -139,9 +137,6 @@ dht22MeasureObject l_Measurement;
 MeasureInformation l_MeasureObject;
 HAL_TIM_Base_Start_IT(&htim10);
 	
-HD44780* test = new HD44780();
-test->send_string("HELLO WORLD");
-HAL_Delay(1000);
 
 
 
@@ -497,8 +492,11 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
-dht22MeasureObject l_Measurement;
-MeasureInformation l_MeasureObject;
+	l_manager->hd44780Clear();
+	
+	
+	dht22MeasureObject l_Measurement;
+	MeasureInformation l_MeasureObject;
 
 	
 	l_manager->GetDHT22Measure(l_Measurement);
@@ -507,6 +505,7 @@ MeasureInformation l_MeasureObject;
 
 	FloatToString(&l_MeasureObject.temp_in_string[6],l_Measurement.tmp);
 	FloatToString(&l_MeasureObject.rh_in_string[4],l_Measurement.rh);
+	
 	
 	GetRTCDate(l_MeasureObject.date);
 	GetRTCTime(l_MeasureObject.time);
@@ -517,6 +516,11 @@ MeasureInformation l_MeasureObject;
 	while(!save_to_usb(l_MeasureObject)){
 	MX_USB_HOST_Process();	
 	}
+
+	l_manager->hd44780SendString(l_MeasureObject.temp_in_string);
+	l_manager->hd44780SendString(l_MeasureObject.rh_in_string);
+	
+	
 
 
 	

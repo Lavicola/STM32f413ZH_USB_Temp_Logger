@@ -152,18 +152,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>38</LineNumber>
+          <LineNumber>517</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134242996</Address>
+          <Address>134228232</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Custom\I2c_lcd.cpp</Filename>
+          <Filename>../Src/main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\usb_final\../Custom/I2c_lcd.cpp\38</Expression>
+          <Expression>\\usb_final\../Src/main.c\517</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>520</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>../Src/main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <Tracepoint>
@@ -891,8 +907,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Custom\I2c_lcd.h</PathWithFileName>
-      <FilenameWithoutPath>I2c_lcd.h</FilenameWithoutPath>
+      <PathWithFileName>..\Custom\hd44780.h</PathWithFileName>
+      <FilenameWithoutPath>hd44780.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -903,8 +919,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Custom\I2c_lcd.cpp</PathWithFileName>
-      <FilenameWithoutPath>I2c_lcd.cpp</FilenameWithoutPath>
+      <PathWithFileName>..\Custom\hd44780.cpp</PathWithFileName>
+      <FilenameWithoutPath>hd44780.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
