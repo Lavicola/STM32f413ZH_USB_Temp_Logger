@@ -1,8 +1,7 @@
 
 /** 
-Function(implementation) used from: https://controllerstech.com/i2c-lcd-in-stm32/
-
-
+Function(implementation) taken from: https://controllerstech.com/i2c-lcd-in-stm32/
+(small changes were added)
 **/
 
 #include "HD44780.h"

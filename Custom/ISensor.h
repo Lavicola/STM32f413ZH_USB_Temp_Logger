@@ -17,7 +17,6 @@ class ISensor
 					virtual uint8_t Read (void)= 0;
 					virtual ~ISensor(){};
 						
-						
 					static void Set_Pin_Output (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
 					static void Set_Pin_Input (GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
 

@@ -1,3 +1,7 @@
+
+#ifndef MEASUREINFORMATIONOBJECT_H
+#define MEASUREINFORMATIONOBJECT_H
+
 #include "stdint.h"
 
 
@@ -8,3 +12,5 @@ typedef struct MeasureInformation {
 	 uint8_t time[2];
 } MeasureInformation;
  
+
+#endif

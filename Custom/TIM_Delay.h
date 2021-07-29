@@ -5,8 +5,6 @@
 
 static TIM_HandleTypeDef htim3;
 
-
-
 void MX_TIM3_Init(void);
 
 void TIM_Start(void);

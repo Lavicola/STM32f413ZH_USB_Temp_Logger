@@ -9,12 +9,8 @@
 #define DHT22_PORT GPIOB
 #define DHT22_PIN GPIO_PIN_5
 
-
-//#define DS18B20_PORT GPIOB
-//#define DS18B20_PIN GPIO_PIN_4
-
-
-
+#define DS18B20_PORT GPIOB
+#define DS18B20_PIN GPIO_PIN_4
 
 
 class ComponentsManager
@@ -30,25 +26,14 @@ class ComponentsManager
 	   static ComponentsManager* getInstance();
 		
 	
-	
-	
-	
-	
-	
 	private:
 	static ComponentsManager* m_Instance;
 	ComponentsManager();
 	~ComponentsManager();
 
-	
-	
 	DHT22 m_dht22;
 	DS18B20 m_ds18b20;
 	HD44780 m_hd44780;
-	
-	
-	
-	
 	
 	
 };

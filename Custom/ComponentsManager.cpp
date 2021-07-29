@@ -30,9 +30,6 @@ void ComponentsManager::hd44780Clear(){
 }
 
 
-
-
-
 ComponentsManager* ComponentsManager::getInstance(){
 	
 	if(!ComponentsManager::m_Instance) {

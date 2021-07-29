@@ -146,9 +146,11 @@ HAL_TIM_Base_Start_IT(&htim10);
   while (1)
   {
 				
-  
+  			__WFI();
+
     /* USER CODE END WHILE */
 
+		
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

@@ -21,19 +21,12 @@ class DHT22 : ISensor{
 	public:
 		DHT22(uint16_t a_pin,GPIO_TypeDef* a_port);
 
-	
 		void Start(void);
 		bool Check_Response (void);
 		uint8_t Read (void);
 		bool parse(uint8_t data[40], float* a_ptemperature, float* a_phumidity);
 		bool GetMeasurement(dht22MeasureObject& measure_object );
 
-	
-	
-	
-	
-	
-	
 };
 
 #endif

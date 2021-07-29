@@ -1,3 +1,8 @@
+
+#ifndef HD44780_H
+#define HD44780_H
+
+
 extern "C"{
 #include "stm32f4xx_hal.h"
 }
@@ -20,3 +25,6 @@ void put_cur(int row, int col);  // put cursor at the entered position row (0 or
 void clear (void);  
 	
 };
+
+
+#endif

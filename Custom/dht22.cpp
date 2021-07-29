@@ -1,3 +1,6 @@
+/*
+Function Implementation taken from: https://controllerstech.com/temperature-measurement-using-dht22-in-stm32/
+*/
 #include "dht22.h"
 #include "TIM_Delay.h"
 

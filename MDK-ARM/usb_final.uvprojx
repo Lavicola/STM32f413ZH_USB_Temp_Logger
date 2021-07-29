@@ -699,7 +699,7 @@
           <Files>
             <File>
               <FileName>TIM_Delay.cpp</FileName>
-              <FileType>8</FileType>
+              <FileType>1</FileType>
               <FilePath>..\Custom\TIM_Delay.cpp</FilePath>
             </File>
             <File>

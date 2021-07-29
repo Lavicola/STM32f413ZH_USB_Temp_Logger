@@ -3,7 +3,7 @@
 <title>Static Call Graph - [usb_final\usb_final.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image usb_final\usb_final.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Jul 28 02:05:24 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Jul 29 13:47:36 2021
 <BR><P>
 <H3>Maximum Stack Usage =        464 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -610,10 +610,10 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_InterfaceInit
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
 <LI><a href="#[196]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_InterfaceInit
 </UL>
 
 <P><STRONG><a name="[a6]"></a>free</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, h1_free.o(.text))
@@ -621,15 +621,15 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_InterfaceDeInit
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_InterfaceDeInit
 </UL>
 
 <P><STRONG><a name="[107]"></a>__aeabi_uldivmod</STRONG> (Thumb, 0 bytes, Stack size 48 bytes, lludivv7m.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = __aeabi_uldivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
-<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
 </UL>
 
 <P><STRONG><a name="[209]"></a>_ll_udiv</STRONG> (Thumb, 238 bytes, Stack size 48 bytes, lludivv7m.o(.text), UNUSED)
@@ -711,12 +711,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config()
 <LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init()
 <LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_RTC_Init()
-<LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISensor::Set_Pin_Output(GPIO_TypeDef*, unsigned short)
-<LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISensor::Set_Pin_Input(GPIO_TypeDef*, unsigned short)
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_InterfaceInit
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_MspInit
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_HCD_MspInit
+<LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISensor::Set_Pin_Output(GPIO_TypeDef*, unsigned short)
+<LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISensor::Set_Pin_Input(GPIO_TypeDef*, unsigned short)
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_InterfaceInit
 </UL>
 
 <P><STRONG><a name="[20f]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
@@ -734,9 +734,9 @@ Global Symbols
 <P><STRONG><a name="[3]"></a>__rt_heap_expand</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
 <P><STRONG><a name="[a4]"></a>__rt_heap_descriptor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_heap_descriptor_intlibspace.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
 </UL>
 
 <P><STRONG><a name="[1a9]"></a>__rt_new_handler_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_new_handler_addr_intlibspace.o(.text))
@@ -849,10 +849,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
 <LI>Call Chain = __cxa_get_globals &rArr; __ARM_exceptions_buffer_init &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_exceptions_buffer_init
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_eh_globals_addr
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
 </UL>
@@ -1003,23 +1003,23 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HD44780::HD44780()
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetCurrentMode
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_SetCurrentMode
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_ResetPort
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_HostInit
 <LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_DriverVBUS
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Delay
+<LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HD44780::HD44780()
 </UL>
 
 <P><STRONG><a name="[e5]"></a>HAL_GPIO_Init</STRONG> (Thumb, 380 bytes, Stack size 40 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init()
-<LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISensor::Set_Pin_Output(GPIO_TypeDef*, unsigned short)
-<LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISensor::Set_Pin_Input(GPIO_TypeDef*, unsigned short)
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_MspInit
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_HCD_MspInit
+<LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISensor::Set_Pin_Output(GPIO_TypeDef*, unsigned short)
+<LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISensor::Set_Pin_Input(GPIO_TypeDef*, unsigned short)
 </UL>
 
 <P><STRONG><a name="[19f]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
@@ -1029,24 +1029,24 @@ Global Symbols
 
 <P><STRONG><a name="[15f]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
 <BR><BR>[Called By]<UL><LI><a href="#[18b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init()
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT22::Start()
 <LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_DriverVBUS
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT22::Start()
 </UL>
 
 <P><STRONG><a name="[c5]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_hal.o(i.HAL_GetTick))
 <BR><BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterInitMode
-<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RTC_WaitForSynchro
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnTXEFlagUntilTimeout
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnMasterAddressFlagUntilTimeout
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnFlagUntilTimeout
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnBTFFlagUntilTimeout
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterInitMode
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RTC_WaitForSynchro
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
 </UL>
 
 <P><STRONG><a name="[c6]"></a>HAL_HCD_Connect_Callback</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, usbh_conf.o(i.HAL_HCD_Connect_Callback))
@@ -1372,9 +1372,9 @@ Global Symbols
 <P><STRONG><a name="[10f]"></a>HAL_RTC_Init</STRONG> (Thumb, 180 bytes, Stack size 16 bytes, stm32f4xx_hal_rtc.o(i.HAL_RTC_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = HAL_RTC_Init &rArr; HAL_RTC_MspInit &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterInitMode
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RTC_MspInit
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_EnterInitMode
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RTC_WaitForSynchro
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RTC_MspInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_RTC_Init()
 </UL>
@@ -1449,10 +1449,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[117]"></a>HAL_TIM_Base_Init</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = HAL_TIM_Base_Init &rArr; TIM_Base_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
+<BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init()
 <LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM10_Init()
@@ -1476,12 +1476,12 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[11a]"></a>HAL_TIM_ConfigClockSource</STRONG> (Thumb, 226 bytes, Stack size 16 bytes, stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_TIM_ConfigClockSource &rArr; TIM_TI2_ConfigInputStage
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_TIM_ConfigClockSource &rArr; TIM_ETR_SetConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI2_ConfigInputStage
+<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETR_SetConfig
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI2_ConfigInputStage
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TI1_ConfigInputStage
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITRx_SetConfig
-<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ETR_SetConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM3_Init()
 </UL>
@@ -1535,10 +1535,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[12f]"></a>HAL_UART_Init</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = HAL_UART_Init &rArr; UART_SetConfig &rArr; __aeabi_uldivmod
 </UL>
-<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
-<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SetConfig
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART3_UART_Init()
 </UL>
@@ -1555,8 +1555,8 @@ Global Symbols
 <P><STRONG><a name="[132]"></a>HAL_UART_Transmit</STRONG> (Thumb, 210 bytes, Stack size 32 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_Transmit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;save_to_usb
 </UL>
@@ -1770,10 +1770,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[156]"></a>USBH_FreePipe</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usbh_pipes.o(i.USBH_FreePipe))
-<BR><BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_HandleControl
+<BR><BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_Disconnect
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_HandleControl
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_HandleEnum
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_InterfaceDeInit
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_Disconnect
 </UL>
 
 <P><STRONG><a name="[14e]"></a>USBH_GetDescriptor</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, usbh_ctlreq.o(i.USBH_GetDescriptor))
@@ -1829,8 +1829,8 @@ Global Symbols
 <P><STRONG><a name="[13a]"></a>USBH_Init</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, usbh_core.o(i.USBH_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = USBH_Init &rArr; USBH_LL_Init &rArr; HAL_HCD_Init &rArr; HAL_HCD_MspInit &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeInitStateMachine
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_Init
+<BR>[Calls]<UL><LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_Init
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeInitStateMachine
 </UL>
 <BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_HOST_Init
 </UL>
@@ -1851,8 +1851,8 @@ Global Symbols
 <P><STRONG><a name="[c9]"></a>USBH_LL_Disconnect</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, usbh_core.o(i.USBH_LL_Disconnect))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = USBH_LL_Disconnect &rArr; USBH_LL_Stop &rArr; HAL_HCD_Stop &rArr; USB_StopHost
 </UL>
-<BR>[Calls]<UL><LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_FreePipe
-<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_Stop
+<BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_Stop
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_FreePipe
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_HCD_Disconnect_Callback
 </UL>
@@ -1982,14 +1982,14 @@ Global Symbols
 <P><STRONG><a name="[16a]"></a>USBH_MSC_BOT_Process</STRONG> (Thumb, 550 bytes, Stack size 40 bytes, usbh_msc_bot.o(i.USBH_MSC_BOT_Process))
 <BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = USBH_MSC_BOT_Process &rArr; USBH_MSC_BOT_REQ_Reset &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_REQ_Reset
+<BR>[Calls]<UL><LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_SetToggle
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_GetURBState
+<LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_GetToggle
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_REQ_Reset
 <LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_DecodeCSW
 <LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Abort
 <LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_BulkSendData
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_BulkReceiveData
-<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_SetToggle
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_GetURBState
-<LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_GetToggle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_SCSI_Write
 <LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_SCSI_TestUnitReady
@@ -2037,9 +2037,9 @@ Global Symbols
 <P><STRONG><a name="[174]"></a>USBH_MSC_SCSI_Inquiry</STRONG> (Thumb, 200 bytes, Stack size 24 bytes, usbh_msc_scsi.o(i.USBH_MSC_SCSI_Inquiry))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = USBH_MSC_SCSI_Inquiry &rArr; USBH_MSC_BOT_Process &rArr; USBH_MSC_BOT_REQ_Reset &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_Process
 </UL>
@@ -2047,8 +2047,8 @@ Global Symbols
 <P><STRONG><a name="[179]"></a>USBH_MSC_SCSI_Read</STRONG> (Thumb, 126 bytes, Stack size 32 bytes, usbh_msc_scsi.o(i.USBH_MSC_SCSI_Read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = USBH_MSC_SCSI_Read &rArr; USBH_MSC_BOT_Process &rArr; USBH_MSC_BOT_REQ_Reset &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
 </UL>
 <BR>[Called By]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_Read
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_RdWrProcess
@@ -2057,8 +2057,8 @@ Global Symbols
 <P><STRONG><a name="[176]"></a>USBH_MSC_SCSI_ReadCapacity</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, usbh_msc_scsi.o(i.USBH_MSC_SCSI_ReadCapacity))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = USBH_MSC_SCSI_ReadCapacity &rArr; USBH_MSC_BOT_Process &rArr; USBH_MSC_BOT_REQ_Reset &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_Process
 </UL>
@@ -2066,8 +2066,8 @@ Global Symbols
 <P><STRONG><a name="[177]"></a>USBH_MSC_SCSI_RequestSense</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, usbh_msc_scsi.o(i.USBH_MSC_SCSI_RequestSense))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = USBH_MSC_SCSI_RequestSense &rArr; USBH_MSC_BOT_Process &rArr; USBH_MSC_BOT_REQ_Reset &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
 </UL>
 <BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_RdWrProcess
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_Process
@@ -2076,8 +2076,8 @@ Global Symbols
 <P><STRONG><a name="[175]"></a>USBH_MSC_SCSI_TestUnitReady</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, usbh_msc_scsi.o(i.USBH_MSC_SCSI_TestUnitReady))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = USBH_MSC_SCSI_TestUnitReady &rArr; USBH_MSC_BOT_Process &rArr; USBH_MSC_BOT_REQ_Reset &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_Process
 </UL>
@@ -2085,8 +2085,8 @@ Global Symbols
 <P><STRONG><a name="[17a]"></a>USBH_MSC_SCSI_Write</STRONG> (Thumb, 126 bytes, Stack size 32 bytes, usbh_msc_scsi.o(i.USBH_MSC_SCSI_Write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = USBH_MSC_SCSI_Write &rArr; USBH_MSC_BOT_Process &rArr; USBH_MSC_BOT_REQ_Reset &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Process
 </UL>
 <BR>[Called By]<UL><LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_Write
 <LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_RdWrProcess
@@ -2119,16 +2119,16 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 296<LI>Call Chain = USBH_Process &rArr; USBH_HandleEnum &rArr; USBH_Get_StringDesc &rArr; USBH_GetDescriptor &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
 <BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Start
+<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_Start
+<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_ResetPort
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_GetSpeed
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Delay
 <LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_SetFeature
 <LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_SetCfg
 <LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_OpenPipe
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AllocPipe
 <LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_HandleEnum
 <LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DeInitStateMachine
-<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_Start
-<LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_ResetPort
-<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_GetSpeed
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_HOST_Process
 </UL>
@@ -2355,12 +2355,12 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f413xx.o(RESET)
 </UL>
 <P><STRONG><a name="[18d]"></a>MX_TIM3_Init()</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, tim_delay.o(i._Z12MX_TIM3_Initv))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = MX_TIM3_Init() &rArr; HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = MX_TIM3_Init() &rArr; HAL_TIM_Base_Init &rArr; TIM_Base_SetConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
-<LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler()
 <LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_MasterConfigSynchronization
 <LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_ConfigClockSource
+<LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2402,8 +2402,8 @@ Global Symbols
 <P><STRONG><a name="[195]"></a>ComponentsManager::getInstance()</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, componentsmanager.o(i._ZN17ComponentsManager11getInstanceEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = ComponentsManager::getInstance() &rArr; ComponentsManager::ComponentsManager() &rArr; HD44780::HD44780() &rArr; HD44780::send_cmd(char) &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ComponentsManager::ComponentsManager()
-<LI><a href="#[196]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<BR>[Calls]<UL><LI><a href="#[196]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
+<LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ComponentsManager::ComponentsManager()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2447,8 +2447,8 @@ Global Symbols
 <P><STRONG><a name="[86]"></a>DHT22::Check_Response()</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, dht22.o(i._ZN5DHT2214Check_ResponseEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DHT22::Check_Response()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[19e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay(unsigned short)
-<LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<BR>[Calls]<UL><LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[19e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay(unsigned short)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT22::GetMeasurement(dht22MeasureObject&)
 </UL>
@@ -2468,8 +2468,8 @@ Global Symbols
 <P><STRONG><a name="[87]"></a>DHT22::Read()</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, dht22.o(i._ZN5DHT224ReadEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DHT22::Read()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[19e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay(unsigned short)
-<LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<BR>[Calls]<UL><LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[19e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay(unsigned short)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DHT22::GetMeasurement(dht22MeasureObject&)
 </UL>
@@ -2559,8 +2559,8 @@ Global Symbols
 <P><STRONG><a name="[19d]"></a>HD44780::HD44780()</STRONG> (Thumb, 146 bytes, Stack size 8 bytes, hd44780.o(i._ZN7HD44780C1Ev))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = HD44780::HD44780() &rArr; HD44780::send_cmd(char) &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HD44780::send_cmd(char)
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[1a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HD44780::send_cmd(char)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ComponentsManager::ComponentsManager()
 </UL>
@@ -2588,8 +2588,8 @@ Global Symbols
 <P><STRONG><a name="[196]"></a>operator new(unsigned)</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, new.o(i._Znwj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = operator new(unsigned) &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
-<LI><a href="#[1a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_new_handler_addr
+<BR>[Calls]<UL><LI><a href="#[1a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_new_handler_addr
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ComponentsManager::getInstance()
 </UL>
@@ -2727,7 +2727,7 @@ Global Symbols
 <LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_sync
 </UL>
 
-<P><STRONG><a name="[9d]"></a>main</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[9d]"></a>main</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = main &rArr; SystemClock_Config() &rArr; HAL_RCC_ClockConfig &rArr; HAL_RCC_GetSysClockFreq &rArr; __aeabi_uldivmod
 </UL>
 <BR>[Calls]<UL><LI><a href="#[195]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ComponentsManager::getInstance()
@@ -2864,7 +2864,7 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[190]"></a>MX_TIM10_Init()</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, main.o(i._Z13MX_TIM10_Initv))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = MX_TIM10_Init() &rArr; HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = MX_TIM10_Init() &rArr; HAL_TIM_Base_Init &rArr; TIM_Base_SetConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
@@ -2873,7 +2873,7 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[192]"></a>MX_USART3_UART_Init()</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, main.o(i._Z19MX_USART3_UART_Initv))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = MX_USART3_UART_Init() &rArr; HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = MX_USART3_UART_Init() &rArr; HAL_UART_Init &rArr; UART_SetConfig &rArr; __aeabi_uldivmod
 </UL>
 <BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
@@ -2958,8 +2958,8 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterRequestWrite
+<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_MasterRequestWrite
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Master_Transmit
 </UL>
 
 <P><STRONG><a name="[136]"></a>I2C_WaitOnMasterAddressFlagUntilTimeout</STRONG> (Thumb, 168 bytes, Stack size 32 bytes, stm32f4xx_hal_i2c.o(i.I2C_WaitOnMasterAddressFlagUntilTimeout))
@@ -3369,13 +3369,13 @@ Local Symbols
 <P><STRONG><a name="[157]"></a>USBH_HandleEnum</STRONG> (Thumb, 550 bytes, Stack size 40 bytes, usbh_core.o(i.USBH_HandleEnum))
 <BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = USBH_HandleEnum &rArr; USBH_Get_StringDesc &rArr; USBH_GetDescriptor &rArr; USBH_CtlReq &rArr; USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_SetAddress
+<BR>[Calls]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Delay
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_SetAddress
 <LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_OpenPipe
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Get_StringDesc
 <LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Get_DevDesc
 <LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Get_CfgDesc
 <LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_FreePipe
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_Process
 </UL>
@@ -3387,11 +3387,11 @@ Local Symbols
 <P><STRONG><a name="[14a]"></a>USBH_HandleControl</STRONG> (Thumb, 450 bytes, Stack size 40 bytes, usbh_ctlreq.o(i.USBH_HandleControl))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = USBH_HandleControl &rArr; USBH_CtlSendSetup &rArr; USBH_LL_SubmitURB &rArr; HAL_HCD_HC_SubmitRequest &rArr; USB_HC_StartXfer &rArr; USB_WritePacket
 </UL>
-<BR>[Calls]<UL><LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_FreePipe
+<BR>[Calls]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_GetURBState
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_FreePipe
 <LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_CtlSendSetup
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_CtlSendData
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_CtlReceiveData
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_GetURBState
 </UL>
 <BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_CtlReq
 </UL>
@@ -3450,14 +3450,14 @@ Local Symbols
 <P><STRONG><a name="[88]"></a>USBH_MSC_InterfaceInit</STRONG> (Thumb, 256 bytes, Stack size 32 bytes, usbh_msc.o(i.USBH_MSC_InterfaceInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = USBH_MSC_InterfaceInit &rArr; USBH_OpenPipe &rArr; USBH_LL_OpenPipe &rArr; HAL_HCD_HC_Init &rArr; USB_HC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_OpenPipe
+<BR>[Calls]<UL><LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_SetToggle
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_OpenPipe
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_AllocPipe
 <LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_SelectInterface
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_FindInterface
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_MSC_BOT_Init
-<LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBH_LL_SetToggle
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usbh_msc.o(.data)
 </UL>

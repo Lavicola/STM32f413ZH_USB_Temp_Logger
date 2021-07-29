@@ -1,7 +1,9 @@
+/*
+Function Implementation taken from: https://controllerstech.com/ds18b20-and-stm32/
+*/
+
 #include "Ds18b20.h"
 #include "TIM_Delay.h"
-
-
 
 DS18B20::DS18B20(uint16_t a_pin,GPIO_TypeDef* a_port){
 	m_GPIO_PIN = a_pin;
